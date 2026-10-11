@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Collect Challenge - Documentation</title>
+    <title>Fast Collect Challenge - Règles de Confidentialité et Documentation</title>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         * { box-sizing: border-box; }
@@ -78,7 +78,7 @@
 
         h1 {
             color: #f1c40f;
-            font-size: 22px;
+            font-size: 20px;
             text-align: center;
             margin: 10px 0 25px 0;
             text-shadow: 3px 3px 0px #000;
@@ -186,9 +186,10 @@
         <button class="lang-switch-btn pixel-font" onclick="toggleLanguage()"><span id="lang-btn-label">English</span></button>
     </div>
 
-    <h1 class="pixel-font" data-fr="DOCUMENTATION DU JEU" data-en="GAME DOCUMENTATION">DOCUMENTATION DU JEU</h1>
+    <h1 class="pixel-font" data-fr="POLITIQUE DE CONFIDENTIALITÉ & DOCUMENTATION" data-en="PRIVACY POLICY & GAME DOCUMENTATION">POLITIQUE DE CONFIDENTIALITÉ & DOCUMENTATION</h1>
 
     <div class="nav-summary pixel-font">
+        <a href="#privacy" data-fr="Confidentialité" data-en="Privacy Policy">Confidentialité</a>
         <a href="#overview" data-fr="Presentation" data-en="Overview">Presentation</a>
         <a href="#modes" data-fr="Modes de Jeu" data-en="Game Modes">Modes de Jeu</a>
         <a href="#apples" data-fr="Pommes et Raretes" data-en="Apples and Rarities">Pommes et Raretes</a>
@@ -196,14 +197,58 @@
         <a href="#trade" data-fr="Systeme d'Echange" data-en="Trading System">Systeme d'Echange</a>
         <a href="#witch" data-fr="Fusion de Sorciere" data-en="Witch Fuse">Fusion de Sorciere</a>
         <a href="#accounts" data-fr="Comptes, Firestore et Hors-Ligne" data-en="Accounts, Firestore and Offline">Comptes, Firestore et Hors-Ligne</a>
-        <a href="#events" data-fr="Evenements et Admin" data-en="Events and Admin">Evenements et Admin</a>
+        <a href="#events" data-fr="Admin Abuse" data-en="Admin Abuse">Admin Abuse</a>
+    </div>
+
+    <!-- NOUVELLE SECTION DE POLITIQUE DE CONFIDENTIALITÉ REQUISE PAR GOOGLE -->
+    <div class="doc-section" id="privacy">
+        <h2 class="pixel-font" data-fr="Politique de Confidentialité (Données & Utilisation)" data-en="Privacy Policy (Data & Usage)">Politique de Confidentialité (Données & Utilisation)</h2>
+        <p data-fr="Dernière mise à jour : 2026. Fast Collect Challenge ('nous', 'notre', 'nos') exploite le site web et l'application hébergés à l'adresse fastcollectchallenge.com[cite: 3]. Cette page détaille notre politique concernant la collecte, l'utilisation et la divulgation des données personnelles lorsque vous utilisez notre jeu et nos services d'authentification (Google, GitHub, Email/Mot de passe)."
+           data-en="Last updated: 2026. Fast Collect Challenge ('we', 'our', 'us') operates the website and application hosted at fastcollectchallenge.com[cite: 3]. This page details our policy regarding the collection, use, and disclosure of personal data when you use our game and authentication services (Google, GitHub, Email/Password).">
+           Dernière mise à jour : 2026. Fast Collect Challenge (« nous », « notre », « nos ») exploite le site web et l'application hébergés à l'adresse fastcollectchallenge.com[cite: 3]. Cette page détaille notre politique concernant la collecte, l'utilisation et la divulgation des données personnelles lorsque vous utilisez notre jeu et nos services d'authentification (Google, GitHub, Email/Mot de passe).
+        </p>
+
+        <h3 class="pixel-font" data-fr="1. Données collectées" data-en="1. Data Collected">1. Données collectées</h3>
+        <p data-fr="Pour vous permettre de jouer, de sauvegarder votre progression et d'utiliser l'authentification OAuth (Google / GitHub / Firebase), nous pouvons collecter les informations suivantes :"
+           data-en="To enable you to play, save your progress, and use OAuth authentication (Google / GitHub / Firebase), we may collect the following information:">
+           Pour vous permettre de jouer, de sauvegarder votre progression et d'utiliser l'authentification OAuth (Google / GitHub / Firebase), nous pouvons collecter les informations suivantes :
+        </p>
+        <ul>
+            <li data-fr="Informations d'identification de compte : Nom d'utilisateur, adresse e-mail et identifiant unique de compte fournis via l'authentification Firebase, Google ou GitHub." data-en="Account credentials: Username, email address, and unique account ID provided via Firebase, Google, or GitHub authentication.">Informations d'identification de compte : Nom d'utilisateur, adresse e-mail et identifiant unique de compte fournis via l'authentification Firebase, Google ou GitHub.</li>
+            <li data-fr="Données de jeu et progression : Inventaire des pommes récoltées, score, historique des transactions et échanges, potions achetées et statut dans le jeu enregistrés sur les serveurs Google Firestore." data-en="Game data and progression: Inventory of collected apples, score, transaction and trading history, purchased potions, and in-game status saved on Google Firestore servers.">Données de jeu et progression : Inventaire des pommes récoltées, score, historique des transactions et échanges, potions achetées et statut dans le jeu enregistrés sur les serveurs Google Firestore.</li>
+            <li data-fr="Données techniques : Données de connexion standard et métadonnées nécessaires au bon fonctionnement des services en temps réel (Ably Realtime)." data-en="Technical data: Standard connection data and metadata required for the proper functioning of real-time services (Ably Realtime).">Données techniques : Données de connexion standard et métadonnées nécessaires au bon fonctionnement des services en temps réel (Ably Realtime).</li>
+        </ul>
+
+        <h3 class="pixel-font" data-fr="2. Utilisation des données" data-en="2. Use of Data">2. Utilisation des données</h3>
+        <p data-fr="Les données collectées sont utilisées exclusivement pour :"
+           data-en="The collected data is used exclusively for:">
+           Les données collectées sont utilisées exclusivement pour :
+        </p>
+        <ul>
+            <li data-fr="Créer et gérer votre compte joueur et sécuriser vos connexions." data-en="Creating and managing your player account and securing your logins.">Créer et gérer votre compte joueur et sécuriser vos connexions.</li>
+            <li data-fr="Synchroniser votre progression de jeu et vos inventaires de manière sécurisée via Firestore[cite: 3]." data-en="Synchronizing your game progression and inventories securely via Firestore[cite: 3].">Synchroniser votre progression de jeu et vos inventaires de manière sécurisée via Firestore[cite: 3].</li>
+            <li data-fr="Permettre les échanges de objets et de pommes entre joueurs connectés." data-en="Enabling item and apple trades between connected players.">Permettre les échanges de objets et de pommes entre joueurs connectés.</li>
+            <li data-fr="Améliorer l'expérience utilisateur et assurer le support technique." data-en="Improving user experience and providing technical support.">Améliorer l'expérience utilisateur et assurer le support technique.</li>
+        </ul>
+
+        <h3 class="pixel-font" data-fr="3. Partage et Sécurité des données" data-en="4. Data Sharing and Security">3. Partage et Sécurité des données</h3>
+        <p data-fr="Nous ne vendons, n'échangeons ni ne louons vos informations personnelles identifiables à des tiers. Les données sont hébergées de manière sécurisée sur les serveurs de Google Firebase / Firestore[cite: 3]. Nous mettons en œuvre des mesures de sécurité techniques pour protéger vos informations contre tout accès non autorisé."
+           data-en="We do not sell, trade, or rent your personally identifiable information to third parties. Data is hosted securely on Google Firebase / Firestore servers[cite: 3]. We implement technical security measures to protect your information against unauthorized access.">
+           Nous ne vendons, n'échangeons ni ne louons vos informations personnelles identifiables à des tiers. Les données sont hébergées de manière sécurisée sur les serveurs de Google Firebase / Firestore[cite: 3]. Nous mettons en œuvre des mesures de sécurité techniques pour protéger vos informations contre tout accès non autorisé.
+        </p>
+
+        <h3 class="pixel-font" data-fr="4. Contact" data-en="4. Contact">4. Contact</h3>
+        <p data-fr="Pour toute question concernant cette politique de confidentialité ou vos données personnelles, vous pouvez contacter l'administrateur (FelixRouge de StackInc.)[cite: 3] via l'application ou le serveur communautaire associé."
+           data-en="For any questions regarding this privacy policy or your personal data, you may contact the administrator (FelixRouge of StackInc.)[cite: 3] via the application or associated community server.">
+           Pour toute question concernant cette politique de confidentialité ou vos données personnelles, vous pouvez contacter l'administrateur (FelixRouge de StackInc.)[cite: 3] via l'application ou le serveur communautaire associé.
+        </p>
     </div>
 
     <div class="doc-section" id="overview">
         <h2 class="pixel-font" data-fr="1. Presentation du Jeu" data-en="1. Game Overview">1. Presentation du Jeu</h2>
-        <p data-fr="Fast Collect Challenge est un jeu développé par FelixRouge de StackInc. en 2024 comme étant un mini-jeu sur Emoji Games. Amélioré en 2025, Fast Collect Challenge devient un jeu à part entière hébergé sur navigateur. En 2026, le jeu devint hébergé sur des serveurs de Google Firebase et sur le domaine fastcollectchallenge.com.."
-           data-en="Fast Collect Challenge is a game developed by FelixRouge of StackInc. in 2024, originally as a mini-game on Emoji Games. Enhanced in 2025, Fast Collect Challenge became a standalone browser-based game. In 2026, the game began hosting on Google Firebase servers and the domain fastcollectchallenge.com.">
-           Fast Collect Challenge est un jeu développé par FelixRouge de StackInc. en 2024 comme étant un mini-jeu sur Emoji Games. Amélioré en 2025, Fast Collect Challenge devient un jeu à part entière hébergé sur navigateur. En 2026, le jeu devint hébergé sur des serveurs de Google Firebase et sur le domaine fastcollectchallenge.com.
+        <p data-fr="Fast Collect Challenge est un jeu développé par FelixRouge de StackInc. en 2024 comme étant un mini-jeu sur Emoji Games. Amélioré en 2025, Fast Collect Challenge devient un jeu à part entière hébergé sur navigateur. En 2026, le jeu devint hébergé sur des serveurs de Google Firebase et sur le domaine fastcollectchallenge.com[cite: 3]."
+           data-en="Fast Collect Challenge is a game developed by FelixRouge of StackInc. in 2024, originally as a mini-game on Emoji Games. Enhanced in 2025, Fast Collect Challenge became a standalone browser-based game. In 2026, the game began hosting on Google Firebase servers and the domain fastcollectchallenge.com[cite: 3].">
+           Fast Collect Challenge est un jeu développé par FelixRouge de StackInc. en 2024 comme étant un mini-jeu sur Emoji Games. Amélioré en 2025, Fast Collect Challenge devient un jeu à part entière hébergé sur navigateur. En 2026, le jeu devint hébergé sur des serveurs de Google Firebase et sur le domaine fastcollectchallenge.com[cite: 3].
         </p>
     </div>
 
@@ -211,24 +256,23 @@
         <h2 class="pixel-font" data-fr="2. Modes de Jeu" data-en="2. Game Modes">2. Modes de Jeu</h2>
         
         <h3 class="pixel-font" data-fr="Mode Arcade" data-en="Arcade Mode">Mode Arcade</h3>
-        <p data-fr="Un défi de ramasser le plus de pommes en 60 secondes avec une Pomme Rouge comptant comme 1pt, et une Pomme Verte comptant comme 3pts"
-           data-en="A challenge to collect the most apples in 60 seconds, with a red apple counting as 1 point and a green apple counting as 3 points.">
-           Un défi de ramasser le plus de pommes en 60 secondes avec une Pomme Rouge comptant comme 1pt, et une Pomme Verte comptant comme 3pts
+        <p data-fr="Un défi de ramasser le plus de pommes en 60 secondes avec une Pomme Rouge comptant comme 1pt, et une Pomme Verte comptant comme 3pts[cite: 3]."
+           data-en="A challenge to collect the most apples in 60 seconds, with a red apple counting as 1 point and a green apple counting as 3 points[cite: 3].">
+           Un défi de ramasser le plus de pommes en 60 secondes avec une Pomme Rouge comptant comme 1pt, et une Pomme Verte comptant comme 3pts[cite: 3].
         </p>
 
         <h3 class="pixel-font" data-fr="Mode Aventure" data-en="Adventure Mode">Mode Aventure</h3>
-        <p data-fr="Le mode principal sans limite de temps. Les pommes récoltées sont stockés dans un Inventaire et inscrite dans l'Index, des potions peuvent être achetées dans le Shop. Possiblité d'échanger de pommes avec d'autres joueurs. "
-           data-en="
-The main mode with no time limit. Collected apples are stored in an inventory and recorded in the index; potions can be purchased in the shop. Apples can be traded with other players..">
-           Le mode principal sans limite de temps. Les pommes récoltées sont stockés dans un Inventaire et inscrite dans l'Index, des potions peuvent être achetées dans le Shop. Possiblité d'échanger de pommes avec d'autres joueurs.
+        <p data-fr="Le mode principal sans limite de temps. Les pommes récoltées sont stockés dans un Inventaire et inscrite dans l'Index, des potions peuvent être achetées dans le Shop. Possiblité d'échanger de pommes avec d'autres joueurs[cite: 3]."
+           data-en="The main mode with no time limit. Collected apples are stored in an inventory and recorded in the index; potions can be purchased in the shop. Apples can be traded with other players[cite: 3].">
+           Le mode principal sans limite de temps. Les pommes récoltées sont stockés dans un Inventaire et inscrite dans l'Index, des potions peuvent être achetées dans le Shop. Possiblité d'échanger de pommes avec d'autres joueurs[cite: 3].
         </p>
     </div>
 
     <div class="doc-section" id="apples">
         <h2 class="pixel-font" data-fr="3. Catalogue des Pommes" data-en="3. Apple Catalog">3. Catalogue des Pommes</h2>
-        <p data-fr="Voici le tableau complet de toutes les pommes disponibles en jeu, classées par rarete, prix de revente et chances d'apparition :"
-           data-en="Below is the complete catalog of all apples in the game, categorized by rarity, resale value, and spawn chance:">
-           Voici le tableau complet de toutes les pommes disponibles en jeu, classées par rarete, prix de revente et chances d'apparition :
+        <p data-fr="Voici le tableau complet de toutes les pommes disponibles en jeu, classées par rarete, prix de revente et chances d'apparition[cite: 3] :"
+           data-en="Below is the complete catalog of all apples in the game, categorized by rarity, resale value, and spawn chance[cite: 3]:">
+           Voici le tableau complet de toutes les pommes disponibles en jeu, classées par rarete, prix de revente et chances d'apparition[cite: 3] :
         </p>
 
         <div class="table-responsive">
@@ -267,9 +311,9 @@ The main mode with no time limit. Collected apples are stored in an inventory an
 
     <div class="doc-section" id="shop">
         <h2 class="pixel-font" data-fr="4. Boutique et Potions de Chance" data-en="4. Shop and Luck Potions">4. Boutique et Potions de Chance</h2>
-        <p data-fr="Dans la boutique, vous pouvez acheter des potions pour multiplier temporairement vos chances d'obtenir des pommes rares. Les potions peuvent également être revendues à l'inventaire avec une décote de 20% (remboursement à 80%)."
-           data-en="In the Shop, you can purchase potions to temporarily multiply your luck for rare spawns. Potions can also be resold from the inventory for an 80% refund.">
-           Dans la boutique, vous pouvez acheter des potions pour multiplier temporairement vos chances d'obtenir des pommes rares. Les potions peuvent également être revendues à l'inventaire avec une décote de 20% (remboursement à 80%).
+        <p data-fr="Dans la boutique, vous pouvez acheter des potions pour multiplier temporairement vos chances d'obtenir des pommes rares. Les potions peuvent également être revendues à l'inventaire avec une décote de 20% (remboursement à 80%)[cite: 3]."
+           data-en="In the Shop, you can purchase potions to temporarily multiply your luck for rare spawns. Potions can also be resold from the inventory for an 80% refund[cite: 3].">
+           Dans la boutique, vous pouvez acheter des potions pour multiplier temporairement vos chances d'obtenir des pommes rares. Les potions peuvent également être revendues à l'inventaire avec une décote de 20% (remboursement à 80%)[cite: 3].
         </p>
 
         <div class="table-responsive">
@@ -301,50 +345,50 @@ The main mode with no time limit. Collected apples are stored in an inventory an
     </div>
 
     <div class="doc-section" id="trade">
-        <h2 class="pixel-font" data-fr="5. Systeme d'Echange" data-en="5. Trading System">5. Systeme d'Echange </h2>
-        <p data-fr="Grâce au module de transaction interconnecté avec Firestore, les joueurs peuvent échanger des pommes ou des objets entre leurs comptes ou avec d'autres utilisateurs connectés en ligne de manière sécurisée."
-           data-en="Thanks to the transaction module interconnected with Firestore, players can securely trade apples or items between their accounts or with other online users.">
-           Grâce au module de transaction interconnecté avec Firestore, les joueurs peuvent échanger des pommes ou des objets entre leurs comptes ou avec d'autres utilisateurs connectés en ligne de manière sécurisée.
+        <h2 class="pixel-font" data-fr="5. Systeme d'Echange" data-en="5. Trading System">5. Systeme d'Echange</h2>
+        <p data-fr="Grâce au module de transaction interconnecté avec Firestore, les joueurs peuvent échanger des pommes ou des objets entre leurs comptes ou avec d'autres utilisateurs connectés en ligne de manière sécurisée[cite: 3]."
+           data-en="Thanks to the transaction module interconnected with Firestore, players can securely trade apples or items between their accounts or with other online users[cite: 3].">
+           Grâce au module de transaction interconnecté avec Firestore, les joueurs peuvent échanger des pommes ou des objets entre leurs comptes ou avec d'autres utilisateurs connectés en ligne de manière sécurisée[cite: 3].
         </p>
     </div>
 
     <div class="doc-section" id="witch">
         <h2 class="pixel-font" data-fr="6. Witch Fuse" data-en="6. Witch Fuse">6. Witch Fuse</h2>
-        <p data-fr="Le module de fusion magique permet de combiner plusieurs pommes ou ingrédients de votre inventaire selon des recettes secrètes pour tenter d'obtenir des objets uniques ou des paliers de rareté supérieurs."
-           data-en="The magic fusion module allows you to combine multiple apples or items from your inventory using secret recipes to attempt obtaining unique items or higher rarity tiers.">
-           Le module de fusion magique permet de combiner plusieurs pommes ou ingrédients de votre inventaire selon des recettes secrètes pour tenter d'obtenir des objets uniques ou des paliers de rareté supérieurs.
+        <p data-fr="Le module de fusion magique permet de combiner plusieurs pommes ou ingrédients de votre inventaire selon des recettes secrètes pour tenter d'obtenir des objets uniques ou des paliers de rareté supérieurs[cite: 3]."
+           data-en="The magic fusion module allows you to combine multiple apples or items from your inventory using secret recipes to attempt obtaining unique items or higher rarity tiers[cite: 3].">
+           Le module de fusion magique permet de combiner plusieurs pommes ou ingrédients de votre inventaire selon des recettes secrètes pour tenter d'obtenir des objets uniques ou des paliers de rareté supérieurs[cite: 3].
         </p>
     </div>
 
     <div class="doc-section" id="accounts">
         <h2 class="pixel-font" data-fr="7. Comptes, Firestore et Mode Hors-Ligne" data-en="7. Accounts, Firestore and Offline Mode">7. Comptes, Firestore et Mode Hors-Ligne</h2>
-        <p data-fr="Le jeu est connecte a Firestore (Firebase) pour gérer l'authentification et la sauvegarde des profils en ligne. Vous pouvez vous connecter par les moyens suivants :"
-           data-en="The game is connected to Firestore (Firebase) to handle online profile authentication and cloud saves. You can log in using the following methods:">
-           Le jeu est connecte a Firestore (Firebase) pour gérer l'authentification et la sauvegarde des profils en ligne. Vous pouvez vous connecter par les moyens suivants :
+        <p data-fr="Le jeu est connecte a Firestore (Firebase) pour gérer l'authentification et la sauvegarde des profils en ligne[cite: 3]. Vous pouvez vous connecter par les moyens suivants :"
+           data-en="The game is connected to Firestore (Firebase) to handle online profile authentication and cloud saves[cite: 3]. You can log in using the following methods:">
+           Le jeu est connecte a Firestore (Firebase) pour gérer l'authentification et la sauvegarde des profils en ligne[cite: 3]. Vous pouvez vous connecter par les moyens suivants :
         </p>
         <ul>
-            <li data-fr="Nom d'utilisateur (Username)" data-en="Username">Nom d'utilisateur (Username)</li>
-            <li data-fr="Adresse email et mot de passe" data-en="Email and password">Adresse email et mot de passe</li>
-            <li data-fr="Compte Google" data-en="Google account">Compte Google</li>
-            <li data-fr="Compte GitHub" data-en="GitHub account">Compte GitHub</li>
+            <li data-fr="Nom d'utilisateur (Username)" data-en="Username">Nom d'utilisateur (Username)[cite: 3]</li>
+            <li data-fr="Adresse email et mot de passe" data-en="Email and password">Adresse email et mot de passe[cite: 3]</li>
+            <li data-fr="Compte Google" data-en="Google account">Compte Google[cite: 3]</li>
+            <li data-fr="Compte GitHub" data-en="GitHub account">Compte GitHub[cite: 3]</li>
         </ul>
-        <p data-fr="Concernant les fonctions d'exportation et d'importation de clés (Export Key / Import Key), elles sont prévues pour une utilisation hors-ligne. Elles permettent de générer ou de charger une clé locale de secours pour continuer à jouer et conserver votre progression sans connexion Wi-Fi."
-           data-en="Regarding the export and import key functions (Export Key / Import Key), they are designed for offline use. They allow you to generate or load a local backup key to continue playing and keep your progress without a Wi-Fi connection.">
-           Concernant les fonctions d'exportation et d'importation de clés (Export Key / Import Key), elles sont prévues pour une utilisation hors-ligne. Elles permettent de générer ou de charger une clé locale de secours pour continuer à jouer et conserver votre progression sans connexion Wi-Fi.
+        <p data-fr="Concernant les fonctions d'exportation et d'importation de clés (Export Key / Import Key), elles sont prévues pour une utilisation hors-ligne. Elles permettent de générer ou de charger une clé locale de secours pour continuer à jouer et conserver votre progression sans connexion Wi-Fi[cite: 3]."
+           data-en="Regarding the export and import key functions (Export Key / Import Key), they are designed for offline use. They allow you to generate or load a local backup key to continue playing and keep your progress without a Wi-Fi connection[cite: 3].">
+           Concernant les fonctions d'exportation et d'importation de clés (Export Key / Import Key), elles sont prévues pour une utilisation hors-ligne. Elles permettent de générer ou de charger une clé locale de secours pour continuer à jouer et conserver votre progression sans connexion Wi-Fi[cite: 3].
         </p>
     </div>
 
     <div class="doc-section" id="events">
         <h2 class="pixel-font" data-fr="8. Evenements en Direct et Admin" data-en="8. Live Events and Admin">8. Evenements en Direct et Admin</h2>
-        <p data-fr="Grâce à l'intégration de la technologie Ably Realtime, les administrateurs du jeu peuvent diffuser des événements en direct auprès de tous les joueurs connectés :"
-           data-en="Powered by Ably Realtime technology, game administrators can broadcast live events to all connected players:">
-           Grâce à l'intégration de la technologie Ably Realtime, les administrateurs du jeu peuvent diffuser des événements en direct auprès de tous les joueurs connectés :
+        <p data-fr="Grâce à l'intégration de la technologie Ably Realtime, les administrateurs du jeu peuvent diffuser des événements en direct auprès de tous les joueurs connectés[cite: 3] :"
+           data-en="Powered by Ably Realtime technology, game administrators can broadcast live events to all connected players[cite: 3]:">
+           Grâce à l'intégration de la technologie Ably Realtime, les administrateurs du jeu peuvent diffuser des événements en direct auprès de tous les joueurs connectés[cite: 3] :
         </p>
         <ul>
-            <li data-fr="Global Luck Boosts : Activation globale de multiplicateurs de chance." data-en="Global Luck Boosts: Triggers global luck multipliers.">Global Luck Boosts : Activation globale de multiplicateurs de chance.</li>
-            <li data-fr="Green Time : Chance accrue pour les pommes vertes pendant une duree limitee." data-en="Green Time: Temporary increased green apple luck event.">Green Time : Chance accrue pour les pommes vertes pendant une duree limitee.</li>
-            <li data-fr="Double Points : Multiplie par 2 les points et le gain de pommes récoltées." data-en="Double Points: Doubles points and apple yields.">Double Points : Multiplie par 2 les points et le gain de pommes récoltées.</li>
-            <li data-fr="Admin Spawns : Faire apparaître des pommes spécifiques directement dans votre serveur." data-en="Admin Spawns: Direct spawns of specific rare apples into your server.">Admin Spawns : Faire apparaître des pommes spécifiques directement dans votre serveur.</li>
+            <li data-fr="Global Luck Boosts : Activation globale de multiplicateurs de chance." data-en="Global Luck Boosts: Triggers global luck multipliers.">Global Luck Boosts : Activation globale de multiplicateurs de chance[cite: 3].</li>
+            <li data-fr="Green Time : Chance accrue pour les pommes vertes pendant une duree limitee." data-en="Green Time: Temporary increased green apple luck event.">Green Time : Chance accrue pour les pommes vertes pendant une duree limitee[cite: 3].</li>
+            <li data-fr="Double Points : Multiplie par 2 les points et le gain de pommes récoltées." data-en="Double Points: Doubles points and apple yields.">Double Points : Multiplie par 2 les points et le gain de pommes récoltées[cite: 3].</li>
+            <li data-fr="Admin Spawns : Faire apparaître des pommes spécifiques directement dans votre serveur." data-en="Admin Spawns: Direct spawns of specific rare apples into your server.">Admin Spawns : Faire apparaître des pommes spécifiques directement dans votre serveur[cite: 3].</li>
         </ul>
     </div>
 
